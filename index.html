@@ -1,8 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Survey</title>
 </head>
 <body>
+    <h2 id="question"></h2>
+    <div id="options"></div>
 
+    <script>
+        // Load questions from JSON file
+        fetch('questions.json')
+            .then(response => response.json())
+            .then(questions => {
+                // Get random question
+                const randomIndex = Math.floor(Math.random() * questions.length);
+                const question = questions[randomIndex];
+
+                // Display question
+                document.getElementById('question').textContent = question.question;
+
+                // Display options
+                question.options.forEach(option => {
+                    const div = document.createElement('div');
+                    div.textContent = option;
+                    document.getElementById('options').appendChild(div);
+                });
+            });
+    </script>
 </body>
 </html>
