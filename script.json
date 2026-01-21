@@ -1,0 +1,32 @@
+[
+  {
+    "question": "How satisfied are you with our service?",
+    "options": [
+      "Very Satisfied",
+      "Satisfied",
+      "Neutral",
+      "Dissatisfied",
+      "Very Dissatisfied"
+    ]
+  },
+  {
+    "question": "How often do you use our product?",
+    "options": [
+      "Daily",
+      "Weekly",
+      "Monthly",
+      "Rarely",
+      "Never"
+    ]
+  },
+  {
+    "question": "Would you recommend us to a friend?",
+    "options": [
+      "Definitely",
+      "Probably",
+      "Not Sure",
+      "Probably Not",
+      "Definitely Not"
+    ]
+  }
+]
